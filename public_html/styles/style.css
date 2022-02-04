@@ -21,3 +21,11 @@ Author URI: www.afvisions.com
   .blog-header-logo:hover {
     text-decoration: none;
   }
+
+.castle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: black dashed 1px;
+}

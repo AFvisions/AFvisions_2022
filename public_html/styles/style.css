@@ -11,21 +11,64 @@ Author URI: www.afvisions.com
 .blog-header {
     line-height: 1;
     border-bottom: 1px solid #e5e5e5;
-  }
+}
   
-  .blog-header-logo {
+.blog-header-logo {
     font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
     font-size: 2.25rem;
-  }
+}
   
-  .blog-header-logo:hover {
+.blog-header-logo:hover {
     text-decoration: none;
-  }
+}
+
+body {
+  background-color: #7f8b02;
+  background-image: url("../images/AdobeStock_315349043_16x9.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh; /* ###vh represents the viewport height, also vw, vmin, vmax - 1vh = 1% of the total height of viewport */
+
+}
 
 .castle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: black dashed 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 1590px;
+  background: url('../images/cc_animation_2.png');
+  background-size: cover;
+  animation: play 10s steps(10) infinite;
+  border: black dashed 1px; /* moved the border with 1px to the bottom, because the 1px was causing the sprite to shift 1px every frame. UPDATE: Although this did work at the time, other factors contribute such as browser zoom and browswer rounding errors  */
+
+}
+
+/* .castle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 1590px;
+  background: url('../images/cc_animation_2.png');
+  background-size: cover;
+  animation: play 10s steps(10) infinite;
+  border: black dashed 1px;
+
+} */
+
+@keyframes play {
+  100% { background-position: -12000px; }
+} /* how does @keyframes relate to .castle? Just because of "animation"? would it also relate to any other code with the animation element? */
+
+#af_handwritten {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border: black dashed 1px;
 }

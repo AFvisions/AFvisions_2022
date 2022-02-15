@@ -60,18 +60,24 @@ body {
 }
 
 
+  afvisions_handwritten.png {
+    width: 100px;
+  }
+
+
 
   .castle {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
-    height: 1590px;
+    width: 600px;
+    height: 795px;
     background: url('../images/cc_animation_2.png');
     background-size: cover;
     animation: play 10s steps(10) infinite;
     border: black dashed 1px; 
     
+  
     /* moved the border with 1px to the bottom, because the 1px was causing the sprite to shift 1px every frame. UPDATE: Although this did work at the time, other factors contribute such as browser zoom and browswer rounding errors  */
   }
 
@@ -83,14 +89,26 @@ body {
   height: 1590px;
   background: url('../images/cc_animation_2.png');
   background-size: cover;
-  animation: play 10s steps(10) infinite;
+  animation: play 9s steps(9) 1;
   border: black dashed 1px;
 
 } */
 
 @keyframes play {
-  100% { background-position: -12000px; }
-} /* how does @keyframes relate to .castle? Just because of "animation"? would it also relate to any other code with the animation element? */
+  100% { background-position: -6000px; }
+} /* how does @keyframes relate to .castle? Just because of "animation"? would it also relate to any other code with the animation element? NO the animation is named "play" in the shorthand property style
+
+The animation property is a shorthand property for:
+
+animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count
+animation-direction
+animation-fill-mode
+animation-play-state
+*/
 
   #af_handwritten {
     display: block;

@@ -50,24 +50,22 @@ nav ul {
 
 */
 
-* { 
-  margin: 0;
-  padding: 0;
+* {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-/* https://www.freecodecamp.org/news/html-page-width-height/ */
+body,
+html {
+  width: 100%;
+height: 100%;
+}
 
-body {
-  min-height: 100vh;
-  background-color: #7f8b02;
-  background-image: url("../images/AdobeStock_315349043_16x9.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body, p {
+color: #667077; 
+font: 400 1rem/1.625rem "Poppins", sans-serif;
+}
   
  /* ###vh represents the viewport height, also vw, vmin, vmax - 1vh = 1% of the total height of viewport - https://stackoverflow.com/questions/47319730/css-background-image-larger-than-entire-page*/
 }

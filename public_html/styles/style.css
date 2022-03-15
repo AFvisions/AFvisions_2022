@@ -68,7 +68,6 @@ font: 400 1rem/1.625rem "Poppins", sans-serif;
 }
   
  /* ###vh represents the viewport height, also vw, vmin, vmax - 1vh = 1% of the total height of viewport - https://stackoverflow.com/questions/47319730/css-background-image-larger-than-entire-page*/
-}
 
 #navbar {
   position: fixed;

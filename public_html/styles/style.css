@@ -81,6 +81,7 @@ font: 400 1rem/1.625rem "Poppins", sans-serif;
 .container {
   margin: 0 auto;
   padding: 0 15px;
+  background-color:beige;
 }
 
 .text-container {
@@ -114,4 +115,46 @@ header {
   padding-top: 10rem;
   padding-bottom: 10rem;
   background-image: url("../images/AdobeStock_315349043_3840x2160.jpg");
+  background-size: cover;
+}
+
+#project {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.project-image {
+  width: 40%;
+}
+
+#project .image-container {
+  margin-bottom: 3rem;
+}
+
+.container .grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid {
+  display: grid;
+}
+
+
+/* ------------------ Media Queries ------------------------ */
+
+@media (min-width: 992px) {
+	
+	/* General Styles */
+	.container {
+		max-width: 1140px;
+	}
+
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+  #project .image-container {
+		margin-right: 5rem;
+		margin-bottom: 0;
+	}
 }

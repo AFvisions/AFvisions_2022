@@ -90,7 +90,8 @@ font: 400 1rem/1.625rem "Poppins", sans-serif;
 
 .flex {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
 }
@@ -137,6 +138,12 @@ header {
 
 .grid {
   display: grid;
+}
+
+.card {
+	margin-right: 2rem;
+	margin-bottom: 2.5rem;
+	margin-left: 2rem;
 }
 
 

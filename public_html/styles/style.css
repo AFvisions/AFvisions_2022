@@ -68,14 +68,46 @@ color: #667077;
 font: 400 1rem/1.625rem "Poppins", sans-serif;
 }
 
+a:link, a:visited {
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  color: white;
+}
+
+
 .navbar {
   height: 40px;
   top: 36px;
   background-color: #86beb5;
 }
 
-.navbar .logo-image {
+.logo-image {
+  display: flex;
+  height: 5vh;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar .logo-image img {
   margin: 0;
+  height: 70%;
+}
+
+.navbar ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  list-style: none;
+}
+
+.navbar ul li {
+  padding: 10px 10px 10px 10px;
 }
 
 .container {
@@ -93,7 +125,6 @@ font: 400 1rem/1.625rem "Poppins", sans-serif;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
 }
 
 header .h1-large {
@@ -120,8 +151,12 @@ header {
 }
 
 #project {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+footer {
+  padding-top: 4rem;
 }
 
 .project-image {
@@ -144,6 +179,10 @@ header {
 	margin-right: 2rem;
 	margin-bottom: 2.5rem;
 	margin-left: 2rem;
+}
+
+.bg-gray {
+  background-color: lightblue;
 }
 
 
